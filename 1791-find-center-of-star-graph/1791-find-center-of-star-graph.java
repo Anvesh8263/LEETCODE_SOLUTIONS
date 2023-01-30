@@ -19,7 +19,7 @@
     }
 }*/
 
-import java.util.HashSet;
+/*import java.util.HashSet;
 import java.util.Set;
 class Solution {
     public int findCenter(int[][] edges) {
@@ -35,5 +35,14 @@ if(outEdgesFound.contains(edge[0])){
             outEdgesFound.add(edge[1]);
             }
         return -1;
+    }
+}*/
+
+class Solution {
+    public int findCenter(int[][] edges) {
+        if(edges[0][0]==edges[1][0]||edges[0][0]==edges[1][1]){
+     return edges[0][0];
+        }
+        return edges[0][1];
     }
 }
