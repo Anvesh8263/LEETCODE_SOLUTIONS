@@ -1,6 +1,6 @@
 class Solution {
     public int hIndex(int[] citations) {
-        int l=0; 
+        
         int n=citations.length;
         for(int i=0;i<n;i++){
             if(n-i<=citations[i]){
